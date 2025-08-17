@@ -1,0 +1,72 @@
+
+/* ventes */
+.ventes-container {
+  padding: 20px;
+}
+
+.ventes-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ventes-controls {
+  margin-bottom: 20px;
+}
+
+.ventes-controls input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ventes-list {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.vente-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.vente-card h3 {
+  margin-top: 0;
+}
+
+.vente-card ul {
+  padding-left: 20px;
+}
+
+.vente-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vente-actions button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.vente-actions button:hover {
+  background-color: #0056b3;
+}
+/* ---------------------------------- */

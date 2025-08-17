@@ -1,0 +1,50 @@
+.parametres-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.parametres-section {
+  margin-bottom: 25px;
+}
+
+.parametres-section h3 {
+  margin-bottom: 10px;
+}
+
+.parametres-section label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.parametres-section input,
+.parametres-section select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.parametres-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-save {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

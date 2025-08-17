@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.login-containerS{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+/* Container dynamique selon rôle */
+.login-containerS.admin {
+  background-color: #e0f0ff; /* bleu clair pour admin */
+}
+
+.login-containerS.employé {
+  background-color: #fff3e0; /* orange clair pour employé */
+}
+
+/* Formulaire */
+.login-form {
+  background-color: white;
+  padding:  40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 320px;
+  margin: auto;
+}
+
+.optionContaner{
+     width: 200px;
+ border-radius: 5px;   
+ box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* Titres */
+.login-form h1 {
+  /* text-align: center; */
+  margin-bottom: 10px;
+  font-size: 20px;
+    color: #000;
+
+}
+.login-form p{
+  color: #000;
+
+}
+.login-form h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #0077cc;
+}
+
+
+/* .input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+  appearance: none;
+ 
+} */
+
+/* Changement de bordure au focus */
+.input-field:focus {
+  border: 2px solid;
+  border-color: #0077cc; /* bleu foncé au focus */
+  outline: none; /* supprime le contour par défaut */
+}
+
+/* Bouton */
+.btn-nav {
+  width: 107%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #005fa3;
+}
+
+
+
+/* ..................................... */
+
+
+.dropdown {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 107%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 10;
+  animation: dropdown-animation 0.3s ease-out;
+}
+.p{
+  cursor: pointer;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-select-container {
+  position: relative;
+  width: 100%;
+}
+
+ .input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+ .input-field:focus {
+  border-color: #0077cc;
+  border: 2px solid #0077cc;
+  
+  outline: none;
+}
+.dropdown-icon {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #0077cc;
+  border-radius: 10px;
+  margin: 2px;
+  color: white;
+}
+
+.dropdown-item .icon {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes dropdown-animation {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
